@@ -1,12 +1,9 @@
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class PasswordChecker {
 
-    private static final Logger logger = LogManager.getLogger(Main.class.getName());
 
 
     public boolean passwordIsValid(String password) {
@@ -59,13 +56,14 @@ public class PasswordChecker {
 
 
             if (number && upper_case && lower_case) {
-                logger.debug("Password is okay!");
+                System.out.println("Password is okay!");
                 return true;
             }
 
         }
         //return false;
-       // System.out.println("Password correct!!!");
+
+       // System.out.println("Password correct!!!"); //logger.debug
         return false;
     }
 

@@ -12,7 +12,7 @@ public class Main {
 
         PasswordChecker ps= new PasswordChecker();
 
-        System.out.println("Enter your password: ");
+        System.out.println("Enter your password: "); //log info
         password = scan.nextLine();
         ps.passwordIsValid(password);
     }
