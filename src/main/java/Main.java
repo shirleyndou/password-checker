@@ -12,8 +12,9 @@ public class Main {
 
         PasswordChecker ps= new PasswordChecker();
 
-        System.out.println("Enter your password: "); //log info
+        System.out.println("Enter your password: ");
         password = scan.nextLine();
-        ps.passwordIsValid(password);
+
+        System.out.println(ps.passwordIsOk(password));
     }
 }
