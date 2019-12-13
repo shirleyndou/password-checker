@@ -17,7 +17,7 @@ class PasswordCheckerTest {
     public void passValidLength()
     {
         PasswordChecker charsLength = new PasswordChecker();
-        boolean charsLength1 = charsLength.passwordIsOk("Abcde1#");
+        boolean charsLength1 = charsLength.passwordIsValid("Abcde12#");
         assertTrue(charsLength1);
     }
 
@@ -25,7 +25,7 @@ class PasswordCheckerTest {
     public void passwordValidEmptyTest()
     {
         PasswordChecker passEmpty = new PasswordChecker();
-        boolean empty = passEmpty.passwordIsOk("");
+        boolean empty = passEmpty.passwordIsValid("");
         assertFalse(empty);
 
     }
@@ -34,7 +34,7 @@ class PasswordCheckerTest {
     public void passwordValidUpperCaseTest()
     {
         PasswordChecker passUpperCase = new PasswordChecker();
-        boolean upperCase = passUpperCase.passwordIsOk("abcdefghijklmnopqrstuvwxyz");
+        boolean upperCase = passUpperCase.passwordIsValid("abcdefghijklmnopqrstuvwxyz");
         assertFalse(upperCase);
     }
 
@@ -42,7 +42,7 @@ class PasswordCheckerTest {
     public void passwordValidLowerCaseTest()
     {
         PasswordChecker passLowerCase = new PasswordChecker();
-        boolean lowerCase = passLowerCase.passwordIsOk("ABCDEFGGIJKLMNOPQRSTUVWXYZ");
+        boolean lowerCase = passLowerCase.passwordIsValid("ABCDEFGGIJKLMNOPQRSTUVWXYZ");
         assertFalse(lowerCase);
     }
 
@@ -50,7 +50,7 @@ class PasswordCheckerTest {
     public void passwordValidNumberTest()
     {
         PasswordChecker passNumbers = new PasswordChecker();
-        boolean number = passNumbers.passwordIsOk("Abcdef@");
+        boolean number = passNumbers.passwordIsValid("Abcdef@");
         assertFalse(number);
     }
 
@@ -58,7 +58,7 @@ class PasswordCheckerTest {
     public void passwordValidSpecialCharsTest()
     {
         PasswordChecker specialChars = new PasswordChecker();
-        boolean chars = specialChars.passwordIsOk("@!#$%&*");
+        boolean chars = specialChars.passwordIsValid("@!#$%&*");
         assertFalse(chars);
     }
 
