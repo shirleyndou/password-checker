@@ -18,7 +18,7 @@ class PasswordCheckerTest {
     {
         PasswordChecker charsLength = new PasswordChecker();
         boolean charsLength1 = charsLength.passwordIsValid("Abcde12#");
-        assertTrue(charsLength1);
+        assertFalse(charsLength1);
     }
 
     @Test
