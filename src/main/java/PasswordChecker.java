@@ -30,11 +30,24 @@ public class PasswordChecker {
 
         char check; //checks for all the strings if they are there
 
+        boolean countLength = false;
+        int countDigits = 0;
+        int countUpperCases =0;
+        int countLowerCase=0;
 
-        if (password.length()  > 7) {
-            int countDigits = 0;
-            int countUpperCases =0;
-            int countLowerCase=0;
+        for(int j = 0; j< password.length(); j++) {
+            check = password.charAt(j);
+            if (password.length() > 7) {
+                countLength =true;
+               // countLength++
+                counter++;
+                break;
+            }
+        }
+
+        if(!countLength){
+            System.out.println("Password should be longer than 8 characters");
+        }
 
             for (int i = 0; i < password.length(); i++) {
                 check = password.charAt(i);
@@ -80,10 +93,9 @@ public class PasswordChecker {
             if (sMatcher.matches()) {
                 System.out.println("Password should have at least 1 special character");
                counter++;
-
             }
-        }
-        if (counter > 2) {
+
+        if (counter >= 2) {
             return true;
         }
         return false;
