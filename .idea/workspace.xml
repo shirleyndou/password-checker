@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98ffcea5-085d-4010-b1b7-f2ffe3c06334" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PasswordChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/PasswordChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/PasswordCheckerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/PasswordCheckerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/PasswordCheckerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/PasswordCheckerTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-PasswordCheckerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-PasswordCheckerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PasswordChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PasswordChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PasswordCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PasswordCheckerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,12 +97,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordCheckerTest.passwordValidLowerCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PasswordCheckerTest.passwordIsOk" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;PasswordCheckerTest.passwordValidLowerCaseTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;PasswordCheckerTest.passwordIsOk&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PasswordCheckerTest.passwordIsValid" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;PasswordCheckerTest.passwordIsValid&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -135,33 +177,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PasswordCheckerTest.passwordValidUpperCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;PasswordCheckerTest.passwordValidUpperCaseTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PasswordCheckerTest.passwordIsValid" />
+        <item itemvalue="Gradle.PasswordCheckerTest.passwordIsOk" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.PasswordCheckerTest.passwordValidSpecialCharsTest" />
         <item itemvalue="Gradle.PasswordCheckerTest.passwordValidNumberTest" />
-        <item itemvalue="Gradle.PasswordCheckerTest.passwordValidLowerCaseTest" />
-        <item itemvalue="Gradle.PasswordCheckerTest.passwordValidUpperCaseTest" />
+        <item itemvalue="Gradle.PasswordCheckerTest.passwordValidSpecialCharsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -194,6 +216,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="311" y="39" width="800" height="729" key="#Intentions" timestamp="1579175757156">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="311" y="39" width="800" height="729" key="#Intentions/67.27.1299.741@67.27.1299.741" timestamp="1579175757156" />
     <state x="311" y="58" width="847" height="677" key="#Project_Structure" timestamp="1578995490611">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -214,22 +240,22 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="865" y="284" width="501" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1578923995349" />
-    <state width="1253" height="161" key="GridCell.Tab.0.bottom" timestamp="1579091287666">
+    <state width="1253" height="148" key="GridCell.Tab.0.bottom" timestamp="1579179964339">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="161" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1579091287666" />
-    <state width="1253" height="161" key="GridCell.Tab.0.center" timestamp="1579091287666">
+    <state width="1253" height="148" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1579179964339" />
+    <state width="1253" height="148" key="GridCell.Tab.0.center" timestamp="1579179964339">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="161" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1579091287666" />
-    <state width="1253" height="161" key="GridCell.Tab.0.left" timestamp="1579091287665">
+    <state width="1253" height="148" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1579179964339" />
+    <state width="1253" height="148" key="GridCell.Tab.0.left" timestamp="1579179964339">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="161" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1579091287665" />
-    <state width="1253" height="161" key="GridCell.Tab.0.right" timestamp="1579091287666">
+    <state width="1253" height="148" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1579179964339" />
+    <state width="1253" height="148" key="GridCell.Tab.0.right" timestamp="1579179964339">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="161" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1579091287666" />
+    <state width="1253" height="148" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1579179964339" />
     <state width="1253" height="164" key="GridCell.Tab.1.bottom" timestamp="1579004528020">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -250,10 +276,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="67" y="27" width="1024" height="741" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1578924473803" />
-    <state x="490" y="117" width="442" height="559" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578924193950">
+    <state x="490" y="117" width="442" height="559" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579175768186">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="490" y="117" width="442" height="559" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1299.741@67.27.1299.741" timestamp="1578924193950" />
+    <state x="490" y="117" width="442" height="559" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1299.741@67.27.1299.741" timestamp="1579175768186" />
     <state x="67" y="27" width="1289" height="741" key="new project wizard" timestamp="1575879916615">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

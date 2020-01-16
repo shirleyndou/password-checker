@@ -1,102 +1,97 @@
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class PasswordChecker {
-    public static int counter = 0;
-    public boolean passwordIsOk(String password) {
-        try {
-            if (passwordIsValid(password)) {
-                System.out.println(passwordIsValid(password));
-                System.out.println("Password is okay");
-                counter++;
-            } else {
-                System.out.println(passwordIsValid(password));
-                System.out.println("Please try again!!!");
-            }
 
-        } catch(Exception e){
-            e.printStackTrace();
-            System.err.println("Please try again!!!");
+    public void passwordIsValid(String password) {
+
+        if (!existence(password)) {
+            System.out.println("1. Password should exist");
         }
-        return passwordIsValid(password);
+        if (!longer(password)) {
+            System.out.println("2. Password should be longer than 8 characters");
+        }
+        if (!lowerCase(password)) {
+            System.out.println("3. Password should have at least one lowercase letter");
+        }
+        if (!upperCase(password)) {
+            System.out.println("4. Password should have at least one uppercase letter");
+        }
+        if (!digit(password)) {
+            System.out.println("5. Password should at least have one digit");
+        }
+        if (!character(password)) {
+            System.out.println("6. Password should have at least one special character");
+        }
+    }
+
+    public boolean passwordIsOk(String password) {
+        int counter = 0;
+
+        if (existence(password)) {
+            counter++;
+        }
+        if (longer(password)) {
+            counter++;
+        }
+        if (lowerCase(password)) {
+            counter++;
+        }
+        if (upperCase(password)) {
+            counter++;
+        }
+        if (digit(password)) {
+            counter++;
+        }
+        if (character(password)) {
+            counter++;
+        }
+
+        if (!(existence(password) && longer(password))) {
+            System.err.println("Password is never okay if condition 1 and 2 are not met.");
+        }
+
+        return counter >= 3;
     }
 
 
-    public boolean passwordIsValid(String password) {
+    boolean existence(String password) {
+        return password.length() >= 1;
+    }
 
-        Pattern sPattern = Pattern.compile("[a-zA-Z0-9]*");
-        Matcher sMatcher = sPattern.matcher(password);
+    boolean longer (String password) {
+        return password.length() >= 8;
+    }
 
-        char check; //checks for all the strings if they are there
-
-        boolean countLength = false;
-        int countDigits = 0;
-        int countUpperCases =0;
-        int countLowerCase=0;
-
-        for(int j = 0; j< password.length(); j++) {
-            check = password.charAt(j);
-            if (password.length() > 7) {
-                countLength =true;
-               // countLength++
-                counter++;
-                break;
+    boolean lowerCase (String password) {
+        for (int i =0; i < password.length(); i++) {
+            if (Character.isLowerCase(password.charAt(i))) {
+                return true;
             }
         }
+        return false;
+    }
 
-        if(!countLength){
-            System.out.println("Password should be longer than 8 characters");
+    boolean upperCase (String password) {
+        for (int i = 0; i < password.length(); i++) {
+            if (Character.isUpperCase(password.charAt(i))) {
+                return true;
+            }
         }
+        return false;
+    }
 
-            for (int i = 0; i < password.length(); i++) {
-                check = password.charAt(i);
-                if(Character.isDigit(check)){
-                    countDigits++;
-                    counter++;
-                    break;
-                }
+    boolean digit (String password) {
+        for (int i = 0; i < password.length(); i++) {
+            if (Character.isDigit(password.charAt(i))) {
+                return true;
             }
-            if(countDigits < 1){
-                System.out.println("Password should consists of at least 1 digit");
-            }
+        }
+        return false;
+    }
 
-            for (int upper_case =0; upper_case<password.length(); upper_case++)
-            {
-                check = password.charAt(upper_case);
-                if(Character.isUpperCase(check))
-                {
-                    countUpperCases++;
-                    counter++;
-                    break;
-                }
+    boolean character (String password) {
+        for (int i = 0; i < password.length(); i++) {
+            if (!Character.isLetterOrDigit(password.charAt(i))) {
+                return true;
             }
-            if(countUpperCases < 1){
-                System.out.println("Password should consists of at least 1 upper case");
-            }
-
-            for (int lower_case =0; lower_case<password.length(); lower_case++)
-            {
-                check = password.charAt(lower_case);
-                if(Character.isLowerCase(check))
-                {
-                    countLowerCase++;
-                    counter++;
-                    break;
-                }
-
-            }
-            if(countLowerCase < 1){
-                System.out.println("Password should consists of at least 1 lower case");
-            }
-
-            if (sMatcher.matches()) {
-                System.out.println("Password should have at least 1 special character");
-               counter++;
-            }
-
-        if (counter >= 2) {
-            return true;
         }
         return false;
     }

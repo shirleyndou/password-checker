@@ -1,29 +1,21 @@
-import java.util.*;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-        Scanner scan = new Scanner(System.in);
-        String password;
+        Scanner scanner = new Scanner(System.in);
 
-        PasswordChecker ps= new PasswordChecker();
+        PasswordChecker passwordChecker = new PasswordChecker();
 
-        System.out.println("Enter your password: ");
-        password = scan.nextLine();
-        ps.passwordIsOk(password);
-       // System.out.println(ps.passwordIsOk(password));
+        System.out.println("Please enter your password.");
 
+        String password = scanner.nextLine();
 
-//        if(ps.passwordIsOk(password)){
-//            System.out.println(" From Main :Password is ok");
-//        }else {
-//            System.out.println("From Main : Password is NOT ok");
-//        }
-//        //System.out.println(ps.passwordIsOk(password));
+        System.out.println(passwordChecker.passwordIsOk(password));
+
+        passwordChecker.passwordIsValid(password);
+
 
     }
 }
