@@ -20,8 +20,6 @@
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-PasswordCheckerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-PasswordCheckerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PasswordChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PasswordChecker.java" afterDir="false" />
@@ -240,22 +238,22 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="865" y="284" width="501" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1578923995349" />
-    <state width="1253" height="148" key="GridCell.Tab.0.bottom" timestamp="1579179964339">
+    <state width="1253" height="206" key="GridCell.Tab.0.bottom" timestamp="1579518717765">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="148" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1579179964339" />
-    <state width="1253" height="148" key="GridCell.Tab.0.center" timestamp="1579179964339">
+    <state width="1253" height="206" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1579518717765" />
+    <state width="1253" height="206" key="GridCell.Tab.0.center" timestamp="1579518717765">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="148" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1579179964339" />
-    <state width="1253" height="148" key="GridCell.Tab.0.left" timestamp="1579179964339">
+    <state width="1253" height="206" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1579518717765" />
+    <state width="1253" height="206" key="GridCell.Tab.0.left" timestamp="1579518717764">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="148" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1579179964339" />
-    <state width="1253" height="148" key="GridCell.Tab.0.right" timestamp="1579179964339">
+    <state width="1253" height="206" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1579518717764" />
+    <state width="1253" height="206" key="GridCell.Tab.0.right" timestamp="1579518717765">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="148" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1579179964339" />
+    <state width="1253" height="206" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1579518717765" />
     <state width="1253" height="164" key="GridCell.Tab.1.bottom" timestamp="1579004528020">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -288,6 +286,20 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1579003930394" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/PasswordCheckerTest.java</url>
+          <line>23</line>
+          <properties class="PasswordCheckerTest" method="passwordIsOk">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PasswordChecker$Main.ic" NAME="Main Coverage Results" MODIFIED="1578923378522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -8,7 +8,7 @@ public class Main {
 
         PasswordChecker passwordChecker = new PasswordChecker();
 
-        System.out.println("Please enter your password.");
+        System.out.println("Enter your password: ");
 
         String password = scanner.nextLine();
 

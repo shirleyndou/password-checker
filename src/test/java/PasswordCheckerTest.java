@@ -10,13 +10,13 @@ class PasswordCheckerTest {
     void passwordIsValid() {
 
         String password = "ahfghghg0000%$^&%$A";
-        boolean chekings = passwordChecker.existence(password) &&
+        boolean check = passwordChecker.exist(password) &&
                             passwordChecker.longer(password) &&
                             passwordChecker.lowerCase(password) &&
                             passwordChecker.upperCase(password) &&
                             passwordChecker.digit(password) &&
                             passwordChecker.character(password);
-        assert(chekings);
+        assert(check);
 
     }
 

@@ -2,7 +2,7 @@ public class PasswordChecker {
 
     public void passwordIsValid(String password) {
 
-        if (!existence(password)) {
+        if (!exist(password)) {
             System.out.println("1. Password should exist");
         }
         if (!longer(password)) {
@@ -25,7 +25,7 @@ public class PasswordChecker {
     public boolean passwordIsOk(String password) {
         int counter = 0;
 
-        if (existence(password)) {
+        if (exist(password)) {
             counter++;
         }
         if (longer(password)) {
@@ -44,15 +44,16 @@ public class PasswordChecker {
             counter++;
         }
 
-        if (!(existence(password) && longer(password))) {
+        if (!(exist(password) && longer(password))) {
             System.err.println("Password is never okay if condition 1 and 2 are not met.");
+            return false;
         }
 
         return counter >= 3;
     }
 
 
-    boolean existence(String password) {
+    boolean exist(String password) {
         return password.length() >= 1;
     }
 
@@ -64,7 +65,7 @@ public class PasswordChecker {
         for (int i =0; i < password.length(); i++) {
             if (Character.isLowerCase(password.charAt(i))) {
                 return true;
-            }
+               }
         }
         return false;
     }
